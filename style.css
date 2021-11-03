@@ -13,9 +13,26 @@ body {
   color: white;
 }
 
+h1 {
+  font-size: 96px;
+  margin: 0;
+}
+
+p {
+  font-size: 22px;
+  margin: 0;
+  
+}
+
 ul {
   list-style: none;
   padding: 0;
+}
+
+/* Use this with a <span> to highlight text */
+.highlight {
+  font-weight: 700;
+  color: var(--main-red)
 }
 
 .nav {
@@ -42,8 +59,46 @@ ul {
 
 .landing-container {
   width: 100%;
-  height: 100vh;
+  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  box-sizing: border-box;
+  border-bottom: 8px solid var(--main-red);
+}
+
+.landing-info {
+  width: 700px;
+}
+
+.landing-info ul {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.landing-info li {
+  margin-right: 40px;
+}
+
+.landing-image {
+  display: flex;
+  justify-items: end;
+}
+
+.landing-cta {
+  width: 400px;
+}
+
+.landing-cta a {
+  padding: 16px 24px;
+  border: 1px solid white;
+  margin-right: 20px;
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.landing-cta a:nth-child(1) {
+  background-color: var(--main-red);
+  border-color: var(--main-red);
 }
