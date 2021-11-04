@@ -94,6 +94,11 @@ ul {
   font-size: 2.5rem;
 }
 
+.landing-info i:hover {
+  color: var(--main-red);
+  cursor: pointer;
+}
+
 .landing-image {
   display: flex;
   justify-items: end;
@@ -118,20 +123,20 @@ ul {
 }
 
 .cta-contact {
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .cta-contact:hover {
   cursor: pointer;
+  border: 2px solid var(--main-red);
 }
 
 .cta-work {
   background-color: var(--main-red);
-  border: 1px solid var(--main-red);
+  border: 2px solid var(--main-red);
 }
 
 .cta-work:hover {
   cursor: pointer;
   background-color: var(--main-blue);
-  border-color: white;
 }
