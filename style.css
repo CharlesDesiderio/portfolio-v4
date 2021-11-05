@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 :root {
   --main-blue: #0E0C38;
+  /* --main-blue: #3a0ca3; */
   --main-red: #FF0513;
   scroll-behavior: smooth;
 }
@@ -12,12 +14,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: radial-gradient(circle, rgba(255,5,19,1) 0%, rgba(14,12,56,1) 100%);
   color: white;
-  
+  overflow-x: hidden;
 }
 
 a, a:visited {
   color: white;
   text-decoration: none;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -162,6 +167,7 @@ ul {
 
 .projects-container {
   padding: 2rem;
+  padding-top: 4rem;
 }
 
 .projects-container h1 {
@@ -169,25 +175,41 @@ ul {
 }
 
 .projects {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: grid;
+  grid-gap: 50px;
   grid-template-columns: 575px 575px;
   justify-content: space-evenly;
 }
 
 .project {
+  display: grid;
+  grid-template-rows: 300px auto;
   width: 575px;
   height: 500px;
-  background-color: pink;
   border-radius: 20px;
 }
 
 .project-image {
   max-width: 100%;
-  max-height: 100%;
+  height: 100%;
+  background-color: #3a0ca3;
   border-radius: 20px 20px 0 0;
 }
 
 .project-info {
-  padding: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  padding: 1.5rem;
+  background-color: #1E262C;
+  border-radius: 0 0 20px 20px;
+}
+
+.project-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.project-info p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
 }
