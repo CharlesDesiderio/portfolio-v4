@@ -1,95 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charles Jerome Desiderio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <div class="container">
-  <section class="landing">
-    <nav class="nav">
-      <ul>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Writing</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <div class="landing-container">
-      <div class="landing-info">
-        <p>Hey, nice to meet you! 👋  I'm</p>
-        <h1>Charles Jerome Desiderio</h1>
-        <p>A <span class="highlight">Front-End Developer</span> based in <span class="highlight">Austin, Texas</span>.</p>
-        <p>Connect with me!</p>
-        <ul>
-          <li><i class="fa-brands fa-linkedin"></i></li>
-          <li><i class="fa-brands fa-twitter-square"></i></li>
-          <li><i class="fa-brands fa-github-square"></i></li>
-        </ul>
-        <div class="landing-cta">
-          <a href="#projects" class="cta-work">See My Work</a>
-          <a class="cta-contact">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charles Jerome Desiderio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="landing">
+        <nav class="nav">
+          <ul>
+            <li>About</li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li>Writing</li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="landing-container">
+          <div class="landing-info">
+            <p>Hey, nice to meet you! 👋 I'm</p>
+            <h1>Charles Jerome Desiderio</h1>
+            <p>
+              A <span class="highlight">Front-End Developer</span> based in
+              <span class="highlight">Austin, Texas</span>.
+            </p>
+            <p>Connect with me!</p>
+            <ul>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+              <li><i class="fa-brands fa-twitter-square"></i></li>
+              <li><i class="fa-brands fa-github-square"></i></li>
+            </ul>
+            <div class="landing-cta">
+              <a href="#projects" class="cta-work">See My Work</a>
+              <a class="cta-contact">Contact</a>
+            </div>
+          </div>
+          <div class="landing-image">
+            <img src="./images/headshot.png" />
+          </div>
         </div>
-      </div>
-      <div class="landing-image">
-        <img src="./images/headshot.png" />
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="projects-container">
-    <h1>Selected Projects</h1>
-    <div class="projects">
-      <article class="project">
-          <a target="_blank" href="https://pr-manager.vercel.app"><img class="project-image" src="./images/pr-manager-devices.png" alt="PR Manager"></a>
-        <div class="project-info">
-          <h3>PR Manager</h3>
-          <p>A Markdown editor for creating pull request templates.</p>
-          <p>Built With: React</p>
+      </section>
+      <section id="projects" class="projects-container">
+        <h1>Selected Projects</h1>
+        <div class="projects">
+          <article class="project">
+            <a target="_blank" href="https://pr-manager.vercel.app"
+              ><img
+                class="project-image"
+                src="./images/pr-manager-devices.png"
+                alt="PR Manager"
+            /></a>
+            <div class="project-info">
+              <h3>PR Manager</h3>
+              <a
+                class="repo-link"
+                href="https://github.com/CharlesDesiderio/pr-manager"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <p>A Markdown editor for creating pull request templates.</p>
+              <p>Built With: React</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <a target="_blank" href="https://charles.desider.io/v3"
+              ><img
+                class="project-image"
+                src="./images/portfolio-v3.png"
+                alt="PR Manager"
+            /></a>
+            <div class="project-info">
+              <h3>Portfolio V3</h3>
+              <a
+                class="repo-link"
+                href="https://github.com/CharlesDesiderio/portfolio-2021"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <p>Previous version of this site.</p>
+              <p>Built With: CSS, Javascript</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <a target="_blank" href="https://talkatme.herokuapp.com/"
+              ><img
+                class="project-image"
+                src="./images/talk-at-me.png"
+                alt="PR Manager"
+            /></a>
+            <div class="project-info">
+              <h3>Talk@Me</h3>
+              <a
+                class="repo-link"
+                href="https://github.com/CharlesDesiderio/talk-at-me-client"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <p>
+                A full-stack Twitter-style social media app focused on language
+                exchange.
+              </p>
+              <p>Built With: React, Node.js, MongoDB</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <a target="_blank" href="http://farm-stan-client.herokuapp.com/"
+              ><img
+                class="project-image"
+                src="./images/farm-stan.png"
+                alt="PR Manager"
+            /></a>
+            <div class="project-info">
+              <h3>Farm Stan</h3>
+              <a
+                class="repo-link"
+                href="https://github.com/danseiders/farmers_market_client/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <p>
+                A full-stack database to help local shoppers find farmer's
+                markets.
+              </p>
+              <p>Built With: React, Node.js, MongoDB</p>
+            </div>
+          </article>
         </div>
-      </article>
+      </section>
 
-      <article class="project">
-        <a target="_blank" href="https://pr-manager.vercel.app"><img class="project-image" src="./images/pr-manager-devices.png" alt="PR Manager"></a>
-      <div class="project-info">
-        <h3>PR Manager</h3>
-        <p>A Markdown editor for creating pull request templates.</p>
-        <p>Built With: React</p>
-      </div>
-    </article>
-
-    <article class="project">
-      <a target="_blank" href="https://pr-manager.vercel.app"><img class="project-image" src="./images/pr-manager-devices.png" alt="PR Manager"></a>
-    <div class="project-info">
-      <h3>PR Manager</h3>
-      <p>A Markdown editor for creating pull request templates.</p>
-      <p>Built With: React</p>
+      <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <div class="contact-form">
+          <form
+            action="https://formsubmit.co/charles@desider.io"
+            method="POST"
+            target="_blank"
+          >
+            <div class="inputs">
+              <input
+                class="form-control"
+                name="name"
+                placeholder="Name"
+                required="true"
+                type="text"
+              />
+              <input
+                class="form-control"
+                name="email"
+                placeholder="Email"
+                required="true"
+                type="email"
+              />
+            </div>
+            <textarea
+              class="form-control"
+              name="message"
+              placeholder="Your Message"
+              required="true"
+              rows="10"
+            ></textarea>
+            <button class="btn btn-lg btn-dark btn-block wiggle" type="submit">
+              Get In Touch!
+            </button>
+          </form>
+        </div>
+      </section>
     </div>
-  </article>
-
-  <article class="project">
-    <a target="_blank" href="https://pr-manager.vercel.app"><img class="project-image" src="./images/pr-manager-devices.png" alt="PR Manager"></a>
-  <div class="project-info">
-    <h3>PR Manager</h3>
-    <p>A Markdown editor for creating pull request templates.</p>
-    <p>Built With: React</p>
-  </div>
-</article>
-
-<article class="project">
-  <a target="_blank" href="https://pr-manager.vercel.app"><img class="project-image" src="./images/pr-manager-devices.png" alt="PR Manager"></a>
-<div class="project-info">
-  <h3>PR Manager</h3>
-  <p>A Markdown editor for creating pull request templates.</p>
-  <p>Built With: React</p>
-</div>
-</article>
-
-    </div>
-  </section>
-</div>
-</body>
+    <footer class="footer">
+      Made with ❤️ in 2021 by Charles Jerome Desiderio
+    </footer>
+  </body>
 </html>

@@ -183,11 +183,17 @@ ul {
 }
 
 .project {
+  position: relative;
   display: grid;
   grid-template-rows: 300px auto;
   width: 575px;
   height: 500px;
   border-radius: 20px;
+  transition: .2s;
+}
+
+.project:hover {
+  transform: scale(1.02);
 }
 
 .project-image {
@@ -198,6 +204,8 @@ ul {
 }
 
 .project-info {
+  position: relative;
+  border-top: 4px solid var(--main-red);
   font-family: 'Roboto Mono', monospace;
   padding: 1.5rem;
   background-color: #1E262C;
@@ -212,4 +220,113 @@ ul {
 .project-info p {
   font-size: 1.25rem;
   margin-top: 1rem;
+}
+
+.repo-link {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 15px;
+  right: 20px;
+}
+
+.repo-link:hover {
+  color: var(--main-red);
+  transition: .2;
+}
+
+.contact {
+  width: 100%;
+  border-top: 4px solid var(--main-red);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.contact h1 {
+  margin-left: 70px;
+}
+
+.contact-form {
+  width: 700px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form button {
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 3px solid var(--main-red);
+  border-radius: 15px;
+  background-color: var(--main-red);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputs input {
+  font-size: 1.5rem;
+  width: 40%;
+  padding: 1rem;
+  border: 3px solid var(--main-red);
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem; 
+  padding: 1rem;
+  border: 3px solid var(--main-red);
+  border-radius: 15px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: .5rem;
+  background-color: black;
+  margin: 0;
+}
+
+
+@media (max-width: 860px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .landing-container {
+    flex-direction: column;
+
+  }
+
+  .landing-info {
+    width: 100%;
+  }
+
+  .landing-image {
+    width: 100%;
+  }
+
+  .landing-cta {
+    width: 100%;
+  }
+
 }
