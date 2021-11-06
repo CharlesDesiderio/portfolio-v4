@@ -8,7 +8,8 @@
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
+  box-sizing: content-box;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -131,7 +132,6 @@ ul {
 .landing-image img {
   position: relative;
   bottom: -1px;
-  /* z-index: -1; */
 }
 
 .landing-cta {
@@ -308,13 +308,50 @@ textarea {
 
 @media (max-width: 860px) {
 
-  .container {
+  h1 {
+    font-size: 3rem;
+    line-height: 48px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .nav {
+    justify-content: space-around;
+  }
+  
+  .nav ul {
     width: 100%;
+    border-bottom: 4px solid var(--main-red);
+    justify-content: space-evenly;
+  }
+
+  .nav ul li {
+    margin: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
   }
 
   .landing-container {
-    flex-direction: column;
+    padding: 0 1rem;
+  }
 
+  .landing-image {
+    width: 90%;
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    /* z-index: -1; */
+  }
+
+  .landing-image img {
+    max-width: 50%;
   }
 
   .landing-info {
@@ -327,6 +364,36 @@ textarea {
 
   .landing-cta {
     width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    width: 300px;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .inputs input {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  textarea {
+    margin-top: 0;
+    width: 90%;
+  }
+
+  .contact button {
+    width: 90%;
   }
 
 }
