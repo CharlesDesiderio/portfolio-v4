@@ -48,6 +48,7 @@ ul {
 }
 
 .container {
+  position: relative;
   width: 1440px;
   margin: auto;
   background-color: var(--main-blue);
@@ -83,6 +84,25 @@ ul {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: .2s;
   cursor: pointer;
+}
+
+.resume {
+  position: absolute;
+  top: 80 px;
+  right: 20px;
+  z-index: 2;
+  font-size: 1.25rem;
+  padding: .5rem 1rem;
+  border-radius: 25px;
+  border: 2px solid var(--main-red);
+  background-color: var(--main-red);
+}
+
+.resume:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: .2s;
+  background-color: var(--main-blue);
 }
 
 .landing-container {
@@ -133,6 +153,7 @@ ul {
 .landing-image img {
   position: relative;
   bottom: -1px;
+  height: 100%;
 }
 
 .landing-cta {
@@ -154,6 +175,8 @@ ul {
 .cta-contact:hover {
   cursor: pointer;
   border: 2px solid var(--main-red);
+  transition: .2s;
+  transform: scale(1.05);
 }
 
 .cta-work {
@@ -164,6 +187,8 @@ ul {
 .cta-work:hover {
   cursor: pointer;
   background-color: var(--main-blue);
+  transition: .2s;
+  transform: scale(1.05);
 }
 
 .projects-container {
@@ -353,6 +378,12 @@ textarea {
     margin-right: auto;
   }
 
+  .resume {
+    font-size: 1rem;
+    right: 10;
+    top: 70px;
+  }
+
   .container {
     width: 100vw;
     padding: 0;
@@ -404,8 +435,11 @@ textarea {
     position: absolute;
     display: flex;
     flex-direction: row-reverse;
-
     width: 100%;
+  }
+
+  .landing-image img {
+    height: auto;
   }
 
   .landing-cta {
