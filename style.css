@@ -309,6 +309,12 @@ textarea {
   text-align: center;
 }
 
+.btn:hover {
+  cursor: pointer;
+  transition: .2s;
+  transform: scale(1.05);
+}
+
 @media (max-width: 1300px ) {
   
   body, html {
