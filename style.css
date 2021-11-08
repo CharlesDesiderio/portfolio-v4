@@ -112,14 +112,13 @@ ul {
   height: 90vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   box-sizing: border-box;
   border-bottom: 8px solid var(--main-red);
   padding: 0 4rem 0 4rem;
 }
 
 .landing-info {
-  width: 800px;
+  width: 50%;
 }
 
 .landing-info p {
