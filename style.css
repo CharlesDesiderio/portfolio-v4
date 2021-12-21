@@ -362,7 +362,7 @@ textarea {
   transform: scale(1.05);
 }
 
-@media (max-width: 1300px ) {
+@media (max-width: 1439px ) {
   
   body, html {
     width: 100vw;
@@ -439,7 +439,7 @@ textarea {
   .landing-image {
     width: 90%;
     position: absolute;
-    bottom: 120px;
+    top: 300px;
     right: -155px;
     transform: rotate(-90deg)
     /* z-index: -1; */
